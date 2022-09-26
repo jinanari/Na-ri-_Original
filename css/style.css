@@ -15,9 +15,10 @@ body{
 
 .logo{
     position: fixed;
+
+    top: 20px;
+    left: 30px;
     z-index: 20;
-    width: 1300px;
-    margin-top: 10px;
 }
 
 .hm-box{
@@ -94,6 +95,8 @@ nav a{
     text-align: center;
     color: #fff;
     font-size: 300%;
+
+  z-index: 2;
 }
 
 .toho{
@@ -104,6 +107,7 @@ nav a{
   color:#666;
   font-weight: 800;
   writing-mode: vertical-rl;
+  z-index: 1;
 }
 
 .asirai1{
@@ -648,7 +652,7 @@ opacity:0;
   left: 0;
   margin: auto;
   width: 61%;
-  z-index: 3;
+  z-index: 1;
 }
 
 .waku1{
