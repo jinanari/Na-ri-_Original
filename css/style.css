@@ -8,7 +8,9 @@
 }
 
 body{
-    background-color: #222222;
+    background-color: #333333;
+    font-family: 'Hiragino Sans';
+    overflow-x: hidden;
 }
 
 .hm-box{
@@ -89,6 +91,11 @@ nav a{
   z-index: 3;
   opacity: 0.5;
 
+}
+
+a:hover{
+    color: #ef6ffa;
+    transition: 1s;
 }
 
 .kanshi1{
@@ -569,5 +576,189 @@ opacity:0;
   margin: auto;
   width: 50%;
   z-index: 3;
-  opacity: 0.6;
+  opacity: 1;
+}
+
+.tuiku{
+  position: absolute;
+  right: 0;
+  top: -10%;
+  font-size: 400px;
+  color:#666;
+  font-weight: 800;
+  transform: translateX(100%);
+}
+
+.tuiku.move3{
+    transform: translateX(0);
+    transition-duration: 1s;
+    transition-delay: 1.6s;
+}
+
+.tuiku1.move3{
+    fill: #fff;
+    transition: 1s;
+}
+
+.tuiku2.move3{
+    fill:#fff;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.tuiku3.move3{
+    fill:#fff;
+    transition: 1s;
+    transition-delay: 1s;
+}
+
+.tuiku-rect{
+  position: absolute;
+  top: 21%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 61%;
+  z-index: 3;
+}
+
+.waku1{
+    opacity: 0;
+}
+
+.waku1.move3{
+    animation-name:speedin2;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    animation-delay: 0s;
+}
+
+.waku2{
+    opacity: 0;
+}
+
+.waku2.move3{
+    animation-name:speedin2;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    animation-delay: 0.5s;
+}
+
+.waku3{
+    opacity: 0;
+}
+
+.waku3.move3{
+    animation-name:speedin2;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    animation-delay: 1s;
+}
+
+.in1.move3{
+    fill:#ef6ffa;
+    transition: 1s;
+    transition-delay: 1.4s;
+}
+
+.in2.move3{
+    fill:#ef6ffa;
+    transition: 1s;
+    transition-delay: 1.7s;
+}
+
+.in3.move3{
+    fill:#ef6ffa;
+    transition: 1s;
+    transition-delay: 2.0s;
+}
+
+.in4.move3{
+    fill:#ef6ffa;
+    transition: 1s;
+    transition-delay: 2.3s;
+}
+
+.in{
+    position: absolute;
+    left: 0;
+    bottom: -10%;
+    font-size: 400px;
+    color:#ef6ffa;
+    font-weight: 800;
+    opacity: 0.4;
+    transform: translateX(-100%);
+  }
+  
+  .in.move3{
+      transform: translateX(0);
+      transition-duration: 1s;
+      transition-delay: 2.5s;
+  }
+
+.auther{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.auther h2{
+    text-align: center;
+    color: #fff;
+    font-size: 300%;
+    padding:60px;
+}
+
+.auther img{
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 55%;
+}
+
+.auther-text{
+    width: 24vw;
+    position: absolute;
+  right: 23vw;
+  top:20vh;
+  text-align: center;
+}
+
+.auther h3{
+    color: #fff;
+    font-size: 220%;
+    display:inline-block;
+    border-bottom: solid 2px #ef6ffa;
+    margin: 5%;
+}
+
+.auther p{
+    color: #fff;
+    font-size: 138%;
+    text-align: left
+}
+
+footer{
+    position: absolute;
+    bottom:0;
+    width: 100vw;
+    height: 60px;
+    border-top: solid 15px #555555;
+    background-color: #555555;
+    text-align: center;
+    }
+
+
+footer a{
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 30px;
+    align-items: center;
+    bottom:20px;
 }

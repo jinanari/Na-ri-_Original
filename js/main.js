@@ -13,6 +13,6 @@ $(function($){
             })
         
             $('.rethoric').on('mouseenter', function() {
-                $("").addClass("move3");
+                $(".tuiku,.tuiku1,.tuiku2,.tuiku3,.waku1,.waku2,.waku3,.in,.in1,.in2,.in3,.in4").addClass("move3");
                 })
 });
