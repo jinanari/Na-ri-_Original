@@ -29,8 +29,8 @@ function animeMove1(){
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
       if (scroll >= elemPos - windowHeight + windowHeight/2){
-      $(".kaeri2,.cls-4,.hide,.jikanmore,.jikankanji,.kakikudasi1,.kuni,.yabu,.yama,.ga,.ari,.siro,.haru,.sou,.moku,.fuka,.kan,.toki,.hana,.soso,.namida,.ura,.waka,.tori,.hana,.soso,.namida,.ura,.waka,.tori,.odoro,.kokoro,.hou,.ka,.tura,.san,.getu,.ie,.syo,.ata,.ban,.kin,.haku,.tou,.kaku,.sara,.miji,.subete,.hossu,.zaru,.tae,.sin").addClass('move1');
-      }else{$(".kaeri2,.cls-4,.hide,.jikanmore,.jikankanji,.kakikudasi1,.kuni,.yabu,.yama,.ga,.ari,.siro,.haru,.sou,.moku,.fuka,.kan,.toki,.hana,.soso,.namida,.ura,.waka,.tori,.hana,.soso,.namida,.ura,.waka,.tori,.odoro,.kokoro,.hou,.ka,.tura,.san,.getu,.ie,.syo,.ata,.ban,.kin,.haku,.tou,.kaku,.sara,.miji,.subete,.hossu,.zaru,.tae,.sin").removeClass('move1');
+      $(".kaeri2,.cls-4,.hide,.jikanmore,.jikankanji,.kakikudasi1,.kuni,.yabu,.yama,.ga,.ari,.siro,.haru,.sou,.moku,.fuka,.kan,.toki,.hana,.soso,.namida,.ura,.waka,.tori,.hana,.soso,.namida,.ura,.waka,.tori,.odoro,.kokoro,.hou,.ka,.tura,.san,.getu,.ie,.syo,.ata,.ban,.kin,.haku,.tou,.kaku,.sara,.miji,.subete,.hossu,.zaru,.tae,.sin,.asirai-m,.asirai-m2").addClass('move1');
+      }else{$(".kaeri2,.cls-4,.hide,.jikanmore,.jikankanji,.kakikudasi1,.kuni,.yabu,.yama,.ga,.ari,.siro,.haru,.sou,.moku,.fuka,.kan,.toki,.hana,.soso,.namida,.ura,.waka,.tori,.hana,.soso,.namida,.ura,.waka,.tori,.odoro,.kokoro,.hou,.ka,.tura,.san,.getu,.ie,.syo,.ata,.ban,.kin,.haku,.tou,.kaku,.sara,.miji,.subete,.hossu,.zaru,.tae,.sin,.asirai-m,.asirai-m2").removeClass('move1');
       }
       });
   }
@@ -47,7 +47,7 @@ function animeMove1(){
           var windowHeight = $(window).height();
           if (scroll >= elemPos - windowHeight + windowHeight/1.2){
           $(".kakikudasi2,.kakikudasi-wide,.gendai").addClass('move2');
-          $(".kaeri2,.cls-4,.hide,.jikanmore,.jikankanji,.kakikudasi1,.kuni,.yabu,.yama,.ga,.ari,.siro,.haru,.sou,.moku,.fuka,.kan,.toki,.hana,.soso,.namida,.ura,.waka,.tori,.hana,.soso,.namida,.ura,.waka,.tori,.odoro,.kokoro,.hou,.ka,.tura,.san,.getu,.ie,.syo,.ata,.ban,.kin,.haku,.tou,.kaku,.sara,.miji,.subete,.hossu,.zaru,.tae,.sin").removeClass('move1');
+          $(".kaeri2,.cls-4,.hide,.jikanmore,.jikankanji,.kakikudasi1,.kuni,.yabu,.yama,.ga,.ari,.siro,.haru,.sou,.moku,.fuka,.kan,.toki,.hana,.soso,.namida,.ura,.waka,.tori,.hana,.soso,.namida,.ura,.waka,.tori,.odoro,.kokoro,.hou,.ka,.tura,.san,.getu,.ie,.syo,.ata,.ban,.kin,.haku,.tou,.kaku,.sara,.miji,.subete,.hossu,.zaru,.tae,.sin,.asirai-m,.asirai-m2").removeClass('move1');
           }else{$(".kakikudasi2,.kakikudasi-wide,.gendai").removeClass('move2');
           }
           });
