@@ -88,7 +88,7 @@ nav a{
 
 .top h2{
     position: absolute;
-    top: 10%;
+    top: 8%;
     right: 0;
     bottom: 0;
     left: 0;
@@ -119,8 +119,8 @@ nav a{
   bottom: 0;
   left: 0;
   margin: auto;
-  width: 85%;
-  height:85%;
+  width: 90%;
+  height:90%;
   z-index: 3;
   opacity: 0.5;
 
@@ -133,7 +133,7 @@ a:hover{
 
 .kanshi1{
   position: absolute;
-  top: 30%;
+  top: 29.3%;
   right: 0;
   bottom: 0;
   left: 0;
@@ -160,7 +160,7 @@ a:hover{
 
 .kaeri1{
   position: absolute;
-  top: 30%;
+  top: 29.3%;
   right: 0;
   bottom: 0;
   left: 0;
@@ -823,6 +823,10 @@ footer a{
         overflow-x: hidden;
     }
 
+    *::-webkit-scrollbar{
+        display: none;
+    }
+
     .logo{
         position: fixed;
         top: 20px;
@@ -906,7 +910,8 @@ footer a{
     .nav.add {
         transform: translateX(100%);
     }
-      
+
+
     .top{
         width: 100vw;
         height: 100vh;
@@ -915,7 +920,7 @@ footer a{
     
     .top h2{
         position: absolute;
-        top: 30%;
+        top: 20%;
         right: 0;
         bottom: 0;
         left: 0;
@@ -950,8 +955,21 @@ footer a{
       height:100%;
       z-index: 3;
       opacity: 0.5;
-    
     }
+
+    .top .asirai1{
+    
+        position: absolute;
+        top: -10%;
+        right: 0;
+        bottom: 0;
+        left: -8%;
+        margin: auto;
+        width: 116%;
+        height:100%;
+        z-index: 3;
+        opacity: 0.5;
+      }
     
     a:hover{
         color: #ef6ffa;
@@ -960,7 +978,7 @@ footer a{
     
     .kanshi1{
       position: absolute;
-      top: 0;
+      top: -10%;
       right: 0;
       bottom: 0;
       left: 0;
@@ -988,7 +1006,7 @@ footer a{
     
     .kaeri1{
       position: absolute;
-      top: 0;
+      top: -10%;
       right: 0;
       bottom: 0;
       left: 0;
@@ -1571,7 +1589,7 @@ footer a{
     
     footer a{
         color: #ffffff;
-        font-size: 7px;
+        font-size: 12px;
         font-weight: bold;
         text-decoration: none;
         margin: 5px;
