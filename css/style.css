@@ -10,6 +10,7 @@
 body{
     background-color: #333333;
     font-family: 'Hiragino Sans';
+    font-weight: bold;
     overflow-x: hidden;
 }
 
@@ -104,7 +105,7 @@ nav a{
   right: -12%;
   top: 0%;
   font-size: 400px;
-  color:#666;
+  color:#444;
   font-weight: 800;
   writing-mode: vertical-rl;
   z-index: 1;
@@ -752,6 +753,10 @@ opacity:0;
   width: 55%;
 }
 
+.img2{
+    display: none;
+}
+
 .auther-text{
     width: 24vw;
     position: absolute;
@@ -771,7 +776,8 @@ opacity:0;
 .auther p{
     color: #fff;
     font-size: 138%;
-    text-align: left
+    text-align: left;
+    font-weight: 300;
 }
 
 footer{
@@ -793,4 +799,783 @@ footer a{
     margin: 30px;
     align-items: center;
     bottom:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 480px){
+
+    *{
+        padding: 0;
+        margin: 0;
+    
+        box-sizing: border-box;
+        /* outline: 2px red solid; */
+        overflow-x: hidden;
+    }
+
+    .logo{
+        position: fixed;
+        top: 20px;
+        left: 15px;
+        z-index: 20;
+    }
+
+    .logo svg{
+        width: 60%;
+        height: 60%;
+    }
+    
+    .hm-box{
+        position: fixed;
+        top: 3px;
+        left: none;
+        right: 10px;
+
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+    
+        transform: rotate(0deg);
+        transition: all 0.2s;
+        z-index: 30;
+    }
+    
+    #hm{
+        position: absolute;
+        top:0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 28px;
+        height: 28px;
+    }
+    
+    .hm-box.add{
+        transform: rotate(-90deg);
+        transition: all 0.2s;
+      }
+    
+    .nav {
+        position: fixed;
+        transform : translateX(200%);
+        width:  50vw;
+        height: 100vh;
+
+        float: right;
+    
+        padding: 25px;
+        padding-right: 10px;
+        display:table;
+        justify-content: right;
+        color: #ffffff;
+        background-color: #555555;
+        transition: transform .3s;
+        z-index: 5;
+      }
+      
+    nav ul{
+        top:0;
+        bottom: 0;
+        float: right;
+    }
+    
+    nav li{
+        list-style: none;
+        padding: 25px 10px;
+        display: flex;
+    }
+    
+    nav a{
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    
+    .nav.add {
+        transform: translateX(100%);
+    }
+      
+    .top{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+    
+    .top h2{
+        position: absolute;
+        top: 30%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        text-align: center;
+        color: #fff;
+        font-size: 180%;
+    
+      z-index: 2;
+    }
+    
+    .toho{
+      position: absolute;
+      right: 50%;
+      top: 40%;
+      font-size: 200px;
+      color:#444;
+      font-weight: 800;
+      writing-mode: vertical-rl;
+      z-index: 1;
+    }
+    
+    .asirai1{
+    
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: -5%;
+      margin: auto;
+      width: 110%;
+      height:100%;
+      z-index: 3;
+      opacity: 0.5;
+    
+    }
+    
+    a:hover{
+        color: #ef6ffa;
+        transition: 1s;
+    }
+    
+    .kanshi1{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: 280px;
+      height: 140px;
+      z-index: 3;
+    
+        animation-name:fadeUpAnime;
+        animation-duration:1.0s;
+        animation-fill-mode:forwards;
+        opacity:0; 
+    }   
+        @keyframes fadeUpAnime{
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+        
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+    
+    .kaeri1{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: 280px;
+      height: 140px;
+      z-index: 2;
+    
+        animation-name:fadeUpAnime;
+        animation-duration:1.0s;
+        animation-fill-mode:forwards;
+        animation-delay: 0.6s;
+        opacity:0; 
+    }
+    
+    .readable{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+    
+    .kanshi2{
+        position: absolute;
+        top:0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 280px;
+        height: 140px;
+        z-index: 3;
+      }
+    
+      .kaeri2{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 280px;
+        height:140px;
+        z-index: 2;
+      }
+    
+      .kaeri2.move1{
+          animation-name:fadeDownAnime;
+          animation-duration:0.8s;
+          animation-fill-mode:forwards;
+          animation-delay: 0.4s;
+      }
+      
+      @keyframes fadeDownAnime{
+          from {
+            opacity: 1;
+            transform: translateY(0px);
+          }
+          to {
+            opacity: 0;
+            transform: translateY(0);
+          }
+        }
+    
+    /* move1の動き */
+    
+      .toki.move1{
+        transform: translateY(-21%);
+        transition-duration: 1.5s;
+        transition-delay:1.2s;
+      }
+    
+      .kan.move1{
+        transform: translateY(21%);
+        transition-duration: 1.5s;
+        transition-delay:1.2s;
+      }
+    
+      .namida.move1{
+        transform: translateY(-21%);
+        transition-duration: 1.5s;
+        transition-delay:1.2s;
+      }
+    
+      .soso.move1{
+        transform: translateY(21%);
+        transition-duration: 1.5s;
+        transition-delay:1.2s;
+      }
+    
+      .waka.move1{
+        transform: translateY(-21%);
+        transition-duration: 1.5s;
+        transition-delay:1.5s;
+      }
+    
+      .ura.move1{
+        transform: translateY(21%);
+        transition-duration: 1.5s;
+        transition-delay:1.5s;
+      }
+    
+      .kokoro.move1{
+        transform: translateY(-21%);
+        transition-duration: 1.5s;
+        transition-delay:1.5s;
+      }
+    
+      .odoro.move1{
+        transform: translateY(21%);
+        transition-duration: 1.5s;
+        transition-delay:1.5s;
+      }
+    
+      .tura.move1{
+        transform: translateY(42%);
+        transition-duration: 1.5s;
+        transition-delay:1.8s;
+      }
+    
+      .san.move1{
+        transform: translateY(-21%);
+        transition-duration: 1.5s;
+        transition-delay:1.8s;
+      }
+    
+      .getu.move1{
+        transform: translateY(-21%);
+        transition-duration: 1.5s;
+        transition-delay:1.8s;
+      }
+    
+      .ata.move1{
+        transform: translateY(42%);
+        transition-duration: 1.5s;
+        transition-delay:2.1s;
+      }
+    
+      .ban.move1{
+        transform: translateY(-21%);
+        transition-duration: 1.5s;
+        transition-delay:2.1s;
+      }
+    
+      .kin.move1{
+        transform: translateY(-21%);
+        transition-duration: 1.5s;
+        transition-delay:2.1s;
+      }
+    
+      .hossu.move1{
+        transform: translateY(63%);
+        transition-duration: 1.5s;
+        transition-delay:2.4s;
+      }
+    
+      .zaru.move1{
+        transform: translateY(21%);
+        transition-duration: 1.5s;
+        transition-delay:2.4s;
+      }
+    
+      .tae.move1{
+        transform: translateY(-21%);
+        transition-duration: 1.5s;
+        transition-delay:2.4s;
+      }
+    
+      .sin.move1{
+        transform: translateY(-63%);
+        transition-duration: 1.5s;
+        transition-delay:2.4s;
+      }
+    
+      .hide{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 280px;
+        height: 180px;
+        z-index: 3;
+        opacity: 0;
+      }
+    
+      .hide.move1{
+        transition: opacity 0.7s;
+        transition-delay: 4.2s;
+        opacity: 1;  
+    
+      }
+    
+      .jikankanji{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 280px;
+        height:180px;
+        z-index: 3;
+        opacity: 0;
+    }
+    
+    .jikankanji.move1{
+        animation-name:speedin;
+        animation-duration:2.3s;
+        animation-fill-mode:forwards;
+        animation-delay: 4.2s;
+    }
+    
+    @keyframes speedin{
+        0% {
+          opacity: 0;
+        }
+        60%{
+            opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+    }
+    
+    .jikanmore{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 270px;
+        height:170px;
+        z-index: 3;
+        opacity: 0;
+    }
+    
+    .jikanmore.move1{
+        animation-name:speedin2;
+        animation-duration:1.6s;
+        animation-fill-mode:forwards;
+        animation-delay: 5.5s;
+    }
+    
+    @keyframes speedin2{
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+    }
+    
+    .kakikudasi1{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 270px;
+        height: 170px;
+        z-index: 3;
+        opacity: 0;
+    }
+    
+    .kakikudasi1.move1{
+        animation-name:speedin3;
+        animation-duration:0.9s;
+        animation-fill-mode:forwards;
+        animation-delay: 7.0s;
+    }
+    
+    @keyframes speedin3{
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 0.8;
+        }
+    }
+    
+    .trans{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+    
+    .kakikudasi2{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 280px;
+        height: 180px;
+        z-index: 3;
+    }
+    
+    .kakikudasi2.move2{
+        animation-name:fadeDownAnime;
+        animation-duration:0.8s;
+        animation-fill-mode:forwards;
+        animation-delay: 0.3s;
+    }
+    
+    .kakikudasi-wide{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 3%;
+        margin: auto;
+        width: 231px;
+        height: 160px;
+        z-index: 3;
+        opacity: 0;
+    }
+    
+    .kakikudasi-wide.move2{
+        animation-name:fadein1;
+        animation-duration:1.7s;
+        animation-delay: 1.0s;
+        animation-fill-mode:forwards;
+        opacity:0; 
+    }   
+        @keyframes fadein1{
+          0% {
+            opacity: 0;
+          }
+          50%{
+            opacity: 1;
+          }
+          100% {
+            opacity: 0.3;
+          }
+        }
+    
+    .gendai{
+        position: absolute;
+        top: 0;
+        right: 5%;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        width: 240px;
+        height: 170px;
+        z-index: 3;
+        opacity: 0;
+    }
+    
+    .gendai.move2{
+    animation-name:fadein2;
+    animation-duration:1.3s;
+    animation-delay: 3s;
+    animation-fill-mode:forwards;
+    opacity:0; 
+    }   
+    @keyframes fadein2{
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+    .rethoric{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+    
+    .kanshi3{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: 280px;
+      height: 140px;
+      z-index: 3;
+      opacity: 1;
+    }
+    
+    .tuiku{
+      position: absolute;
+      right: 0;
+      top: 10%;
+      font-size: 130px;
+      color:#666;
+      font-weight: 800;
+      transform: translateX(100%);
+    }
+    
+    .tuiku.move3{
+        transform: translateX(0);
+        transition-duration: 1s;
+        transition-delay: 1.6s;
+    }
+    
+    .tuiku1.move3{
+        fill: #fff;
+        transition: 1s;
+    }
+    
+    .tuiku2.move3{
+        fill:#fff;
+        transition: 1s;
+        transition-delay: 0.5s;
+    }
+    
+    .tuiku3.move3{
+        fill:#fff;
+        transition: 1s;
+        transition-delay: 1s;
+    }
+    
+    .tuiku-rect{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      width: 337px;
+      height: 195px;
+      z-index: 1;
+    }
+    
+    .waku1{
+        opacity: 0;
+    }
+    
+    .waku1.move3{
+        animation-name:speedin2;
+        animation-duration:1s;
+        animation-fill-mode:forwards;
+        animation-delay: 0s;
+    }
+    
+    .waku2{
+        opacity: 0;
+    }
+    
+    .waku2.move3{
+        animation-name:speedin2;
+        animation-duration:1s;
+        animation-fill-mode:forwards;
+        animation-delay: 0.5s;
+    }
+    
+    .waku3{
+        opacity: 0;
+    }
+    
+    .waku3.move3{
+        animation-name:speedin2;
+        animation-duration:1s;
+        animation-fill-mode:forwards;
+        animation-delay: 1s;
+    }
+    
+    .in1.move3{
+        fill:#ef6ffa;
+        transition: 1s;
+        transition-delay: 1.4s;
+    }
+    
+    .in2.move3{
+        fill:#ef6ffa;
+        transition: 1s;
+        transition-delay: 1.7s;
+    }
+    
+    .in3.move3{
+        fill:#ef6ffa;
+        transition: 1s;
+        transition-delay: 2.0s;
+    }
+    
+    .in4.move3{
+        fill:#ef6ffa;
+        transition: 1s;
+        transition-delay: 2.3s;
+    }
+    
+    .in{
+        position: absolute;
+        left: 0;
+        bottom: 10%;
+        font-size: 200px;
+        color:#ef6ffa;
+        font-weight: 800;
+        opacity: 0.4;
+        transform: translateX(-100%);
+      }
+      
+      .in.move3{
+          transform: translateX(0);
+          transition-duration: 1s;
+          transition-delay: 2.5s;
+      }
+    
+    .auther{
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        text-align: center;
+    }
+    
+    .auther h2{
+        text-align: center;
+        color: #fff;
+        font-size: 150%;
+        padding:5%;
+    }
+    
+    .auther img{
+  position: absolute;
+  top:-34%;
+  right: 0;
+  bottom: none;
+  left: 0;
+  margin: auto;
+  width: 80%;
+    }
+
+    .img1{
+        display: none;
+    }
+
+    .img2{
+        display: flex;
+    }
+    
+    .auther-text{
+        position: absolute;
+        top: none;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+
+        width: 80vw;
+        height: 39vh;
+      right: none;
+      top:none;
+      margin-top: 35vh;
+      text-align: center;
+    }
+    
+    .auther h3{
+        color: #fff;
+        font-size: 3vh;
+        display:inline-block;
+        border-bottom: solid 2px #ef6ffa;
+        margin: 1vh;
+    }
+    
+    .auther p{
+        color: #fff;
+        font-size: 1.9vh;
+        text-align: left
+    }
+    
+    footer{
+        position: absolute;
+        bottom:0;
+        width: 100vw;
+        height: 40px;
+        border-top: solid 5px #555555;
+        background-color: #555555;
+        text-align: center;
+        }
+    
+    
+    footer a{
+        color: #ffffff;
+        font-size: 7px;
+        font-weight: bold;
+        text-decoration: none;
+        margin: 5px;
+        align-items: center;
+        bottom:15px;
+    }
 }
