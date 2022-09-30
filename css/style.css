@@ -109,6 +109,7 @@ nav a{
   font-weight: 800;
   writing-mode: vertical-rl;
   z-index: 1;
+  overflow-y: visible;
 }
 
 .asirai1{
@@ -235,6 +236,15 @@ a:hover{
     height: 100vh;
     position: relative;
 }
+
+.bottomtext{
+    position: absolute;
+    left: 3%;
+    bottom: 1%;
+    font-size: 50px;
+    color:#444;
+    font-weight: 800;
+  }
 
 .kanshi2{
     position: absolute;
@@ -941,13 +951,15 @@ footer a{
     
     .toho{
       position: absolute;
-      right: 50%;
+      right: 40%;
       top: 40%;
-      font-size: 200px;
+      font-size: 180px;
       color:#444;
       font-weight: 800;
+      width: 100%;
       writing-mode: vertical-rl;
-      z-index: 1;
+      overflow: visible;
+      z-index: 3;
     }
     
     .asirai1{
@@ -1667,6 +1679,15 @@ footer a{
         font-size: 1.9vh;
         text-align: left
     }
+
+    .bottomtext{
+        position: absolute;
+        left: 2%;
+        bottom: 1%;
+        font-size: 17px;
+        color:#444;
+        font-weight: 800;
+      }
     
     footer{
         position: absolute;
@@ -1681,7 +1702,7 @@ footer a{
     
     footer a{
         color: #ffffff;
-        font-size: 12px;
+        font-size: 11px;
         font-weight: bold;
         text-decoration: none;
         margin: 5px;
