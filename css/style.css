@@ -951,12 +951,13 @@ footer a{
     
     .toho{
       position: absolute;
-      right: 40%;
-      top: 40%;
-      font-size: 180px;
+      right: 45%;
+      top: 50%;
+      font-size: 150px;
       color:#444;
       font-weight: 800;
-      width: 100%;
+      width: 150px;
+      height: 300px;
       writing-mode: vertical-rl;
       overflow: visible;
       z-index: 3;
@@ -1324,7 +1325,7 @@ footer a{
         bottom: 0;
         left: 0;
         margin: auto;
-        width: 350px;
+        width: 345px;
         height:220px;
         z-index: 3;
         opacity: 0;
@@ -1353,7 +1354,7 @@ footer a{
         bottom: 0;
         left: 0;
         margin: auto;
-        width: 350px;
+        width: 345px;
         height: 220px;
         z-index: 3;
         opacity: 0;
@@ -1407,7 +1408,7 @@ footer a{
         bottom: 0;
         left: 0;
         margin: auto;
-        width: 350px;
+        width: 345px;
         height: 220px;
         z-index: 3;
     }
@@ -1424,9 +1425,9 @@ footer a{
         top: 0;
         right: 0;
         bottom: 0;
-        left: 5%;
+        left: 4%;
         margin: auto;
-        width: 314px;
+        width: 310px;
         height: 230px;
         z-index: 3;
         opacity: 0;
@@ -1458,7 +1459,7 @@ footer a{
         bottom: 0;
         left: 0;
         margin: auto;
-        width: 330px;
+        width: 327px;
         height: 240px;
         z-index: 3;
         opacity: 0;
